@@ -1,0 +1,229 @@
+@font-face {
+  font-family: Poppins;
+  src: url(../Font/Poppins-Light.ttf);
+}
+body {
+  font-family: Poppins;
+}
+nav img {
+  width: 5rem;
+}
+.nav-link {
+  font-size: 20px;
+  font-weight: 700;
+}
+.hero {
+  background-image: url(../Images/Party\ 2.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.568);
+  margin-top: 7rem;
+  align-items: center;
+  color: white;
+  perspective: 1000px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 7rem;
+  font-weight: 800;
+}
+.hero p {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.Left {
+  width: 50%;
+}
+.ii img {
+  width: 30rem;
+}
+.music img {
+  width: 14rem;
+  border-radius: 10px;
+}
+.music {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+.imgspin {
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+
+.spin {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.2s ease-in-out;
+}
+.music:hover .imgspin {
+  transform: translateY(30px);
+}
+.music:hover .spin {
+  opacity: 1;
+
+  top: -30px;
+}
+.text {
+  position: relative;
+}
+.Content,
+.cont {
+  margin-bottom: 3rem;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+.one {
+  align-items: center;
+}
+#About {
+  color: #333333;
+}
+.imgcon {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.imgcon img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: -1rem;
+  left: 0;
+}
+h1,
+.nav-link {
+  text-shadow: 2px 1px 2px #00ffff;
+  position: relative;
+  color: #2f4f6f;
+  text-align: center;
+}
+
+#Work {
+  background-color: #efefef;
+  color: #2a2a2a;
+}
+
+.side h1 {
+  text-shadow: 2px 1px 2px #007777;
+  position: relative;
+  color: #00ffff;
+}
+.side {
+  width: 50%;
+}
+button,
+.btn {
+  background-color: #333333;
+  color: #00ffff;
+  font-weight: 600;
+}
+button:hover,
+.btn:hover {
+  background-color: #00ffff;
+  color: #333333;
+}
+.btnn {
+  background-color: #00ffff;
+  color: #333333;
+}
+.btnn:hover {
+  background-color: #333333;
+  color: #00ffff;
+  font-weight: 600;
+}
+#Video {
+  background-color: #fafafa;
+  color: #2a2a2a;
+}
+#Video img {
+  width: 28rem;
+}
+#Video .vid img {
+  width: 8rem;
+}
+.vid {
+  width: 50%;
+}
+.piece {
+  box-shadow: 0 2px 20px 4px rgba(0, 0, 0, 0.171);
+  padding: 1rem;
+  width: 100%;
+}
+.piece img {
+  width: 5rem;
+}
+.piece svg {
+  width: 4rem;
+  fill: #00ffff;
+}
+#Newsletter {
+  height: 30vh;
+  background-color: #00ffff;
+}
+footer {
+  background-image: url(../Images/Party\ 7.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  background-blend-mode: overlay;
+  background-color: rgba(12, 2, 2, 0.808);
+  color: white;
+}
+footer img {
+  width: 10rem;
+}
+footer svg {
+  width: 2.5rem;
+  fill: #00ffff;
+}
+@media screen and (max-width: 767px) {
+  .side {
+    width: 100%;
+    text-align: center;
+  }
+  .Left {
+    text-align: center;
+  }
+  .one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero h1 {
+    width: 5rem;
+  }
+  .Left {
+    width: 100%;
+  }
+  .Content {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    padding: 2rem;
+  }
+  .dj {
+    display: none;
+  }
+  .cont {
+    flex-direction: column;
+    box-shadow: none;
+    width: 100%;
+    justify-content: center;
+  }
+  .vid {
+    width: 100%;
+  }
+  .music {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
